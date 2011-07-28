@@ -1,0 +1,5 @@
+# Ignore target
+target
+
+# Ignore Mac OS files
+.DS_Store
