@@ -8,7 +8,7 @@
     <packaging>war</packaging>
 
     <properties>
-        <browser>/usr/local/bin/chrome</browser>
+        <browser>/Applications/Google Chrome.app/Contents/MacOS/Google Chrome</browser>
     </properties>
 
     <build>

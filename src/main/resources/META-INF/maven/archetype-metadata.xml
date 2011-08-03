@@ -21,7 +21,7 @@
                 <include>**/*.xml</include>
             </includes>
         </fileSet>
-        <fileSet filtered="true" encoding="UTF-8">
+        <fileSet encoding="UTF-8">
             <directory>src/test/webapp</directory>
             <includes>
                 <include>**/*.html</include>
@@ -30,11 +30,15 @@
         <fileSet encoding="UTF-8">
             <directory>src/test/webapp</directory>
             <includes>
-                <include>**/*.css</include>
-                <include>**/*.js</include>
-                <include>**/*.html</include>
-                <include>**/*.xml</include>
-                <include>**/*.LICENSE</include>
+                <include>lib/**/*.*</include>
+                <include>unit/**/*.*</include>
+                <include>*.html</include>
+            </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+            <directory>src/test/webapp</directory>
+            <includes>
+                <include>ui/**/*.*</include>
             </includes>
         </fileSet>
     </fileSets>

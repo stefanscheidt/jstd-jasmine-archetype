@@ -11,8 +11,15 @@ Usage
 
 1. Clone the Repository
 2. Build and install the archetype via `mvn clean install`
-3. Generate a new JsTestDriver-Jasmine-project via `mvn archetype:generate`
+3. Generate a new JsTestDriver-Jasmine-project via `mvn archetype:generate` (see snippet below).
+4. Adjust the maven project property `browser` in the generate `pom.xml`
 
 Generate new project:
 
     mvn archetype:generate -DachetypeCatalog=local -DarchetypeGroupId=com.opitzconsulting.archetypes -DarchetypeArtifactId=jstd-jasmine-archetype -DarchetypeVersion=0.1.0-SNAPSHOT
+    
+In the generated project, you may
+
+* build the project with `mvn clean install`. This will launch the browser specified via the maven project property `browser`.
+* start Jetty via `mvn jetty:run` and then open `http://localhost:8080/${project.artifactId}/UnitSpecRunner.html` or `http://localhost:8080/${project.artifactId}/UiSpecRunner.html`
+* make the shell scripts `jstd-*.sh` executable and start JsTestRunner server and the tests suites via these scripts.
