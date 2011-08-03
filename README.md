@@ -21,5 +21,5 @@ Generate new project:
 In the generated project, you may
 
 * build the project with `mvn clean install`. This will launch the browser specified via the maven project property `browser`.
-* start Jetty via `mvn jetty:run` and then open `http://localhost:8080/${project.artifactId}/UnitSpecRunner.html` or `http://localhost:8080/${project.artifactId}/UiSpecRunner.html`
-* make the shell scripts `jstd-*.sh` executable and start JsTestRunner server and the tests suites via these scripts.
+* start Jetty via `mvn jetty:run` and then open `http://localhost:8080/${project.artifactId}/UnitSpecRunner.html` or `http://localhost:8080/${project.artifactId}/UiSpecRunner.html`.
+* make the shell scripts `jstd-*.sh` executable (`chmod a+x *.sh`) and start JsTestRunner server and the tests suites via these scripts. First start JsTestRunner server via `./jstd-server.sh` and capture at least one browser by opening `http://localhost:9876/capture`. Start unit tests via `./jstd-unit.sh`. To run the UI tests start Jetty via `mvn jetty:run` and the UI tests via `./jstd-ui.sh`.
