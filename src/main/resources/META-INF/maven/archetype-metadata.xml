@@ -3,7 +3,6 @@
     xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <fileSets>
-
         <fileSet encoding="UTF-8">
             <directory></directory>
             <includes>
@@ -12,19 +11,18 @@
                 <include>*.sh</include>
             </includes>
         </fileSet>
-
         <fileSet encoding="UTF-8">
-            <directory>src/main/webapp</directory>
+            <directory>src/etc/jetty</directory>
             <includes>
-                <include>**/*.js</include>
-                <include>**/*.html</include>
-                <include>**/*.xml</include>
+                <include>webdefaults.xml</include>
             </includes>
         </fileSet>
         <fileSet encoding="UTF-8">
-            <directory>src/test/webapp</directory>
+            <directory>src/main/webapp</directory>
             <includes>
                 <include>**/*.html</include>
+                <include>**/*.js</include>
+                <include>**/*.xml</include>
             </includes>
         </fileSet>
         <fileSet encoding="UTF-8">
